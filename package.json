@@ -1,0 +1,35 @@
+{
+  "name": "m-util",
+  "version": "0.0.2",
+  "description": "Utility.",
+  "main": "index.js",
+  "engines": {
+    "node": "~>0.10.x",
+    "npm": ">= 1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/misak1/m-util.git"
+  },
+  "scripts": {
+    "examples": "node ./examples.js",
+    "test": "mocha --ui tdd ./tests/"
+  },
+  "author": {
+    "name": "Misaki Shibata",
+    "email": "misaki.pink@gmail.com",
+    "url": ""
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/misak1/m-util/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "should": "^7.1.1",
+    "mocha": "^2.3.3"
+  },
+  "keywords": [
+    "Utility"
+  ]
+}
