@@ -1,13 +1,15 @@
 module.exports = new(function() {
 
-  
+  // ヒアドキュメントサポート
   String.prototype.uHereDoc = function() {
     return this.replace(/^function\s?\(\)\s?\{\/\*/gi, "").replace(/\*\/;?\}$/gi, "");
   };
+  // スラッシュ挿入
   String.prototype.uAddslashes = function(s) {
     var reg = new RegExp(s, 'g');
     return this.replace(reg, "\\" + s);
   }
+  // 文字列の繰り返し
   String.prototype.uRepeat = function(i) {
     var repeatStr = this;
     var str = "";
@@ -17,11 +19,7 @@ module.exports = new(function() {
     }
     return str;
   }
-
-  /**
-   * パスからファイル情報返す
-   * @return ['ファイル名','拡張子','拡張子抜きファイル名']
-   */
+  // パスからファイル情報返す @return ['ファイル名','拡張子','拡張子抜きファイル名']
   String.prototype.uGetFileInfo = function() {
       var file_path = this;
       // Extract a file name with the extension.

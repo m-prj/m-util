@@ -13,7 +13,8 @@
   },
   "scripts": {
     "examples": "node ./examples.js",
-    "test": "mocha --ui tdd ./tests/"
+    "test": "mocha --ui tdd ./tests/",
+    "doc": "php README.php > README.md"
   },
   "author": {
     "name": "Misaki Shibata",
