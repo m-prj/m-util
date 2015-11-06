@@ -14,7 +14,7 @@
   "scripts": {
     "examples": "node ./examples.js",
     "test": "mocha --ui tdd ./tests/",
-    "doc": "php README.php > README.md"
+    "doc": "php README.php | sed -e 's/NPM_PACKAGE_NAME/m-util/g' >  README.md "
   },
   "author": {
     "name": "Misaki Shibata",

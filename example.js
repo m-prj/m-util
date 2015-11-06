@@ -22,3 +22,13 @@ console.log(path2.uGetFileNameExt());
 console.log(path2.uGetFileExt());
 console.log(path2.uGetFileName());
 console.log(path2);
+
+console.log(Math.uFloor(124.456, 1));
+console.log(Math.uCeil(124.456, 1));
+console.log(Math.uRound(124.454, 1));
+console.log(Math.uRound(124.455, 1));
+
+console.log(Math.uFloor(232.456, 2));
+console.log(Math.uCeil(232.456, 2));
+console.log(Math.uRound(232.454, 2));
+console.log(Math.uRound(232.455, 2));

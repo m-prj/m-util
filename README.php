@@ -1,11 +1,11 @@
-# m-util
-[![npm total download](https://img.shields.io/npm/dt/m-util.svg?style=flat)](https://www.npmjs.com/package/m-util)
-[![npm version](https://badge.fury.io/js/m-util.svg?style=flat)](https://badge.fury.io/js/m-util)
+# NPM_PACKAGE_NAME
+[![npm total download](https://img.shields.io/npm/dt/NPM_PACKAGE_NAME.svg?style=flat)](https://www.npmjs.com/package/NPM_PACKAGE_NAME)
+[![npm version](https://badge.fury.io/js/NPM_PACKAGE_NAME.svg?style=flat)](https://badge.fury.io/js/NPM_PACKAGE_NAME)
 [![License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://ruedap.mit-license.org/2015)
 
 ## インストール - Install
 ```
-$ npm i -S m-util
+$ npm i -S NPM_PACKAGE_NAME
 ```
 
 ## 使い方 - Usage
@@ -20,7 +20,7 @@ echo file_get_contents('README-func.txt');
 
 ### NodeJS
 ```js
-require('./m-util.js');
+require('./NPM_PACKAGE_NAME.js');
 
 <?php
 echo implode("\n", array_slice(explode( "\n", file_get_contents('example.js')), 2));
