@@ -2,9 +2,9 @@ require('./index.js');
 
 // Here Documents
 var t = (function(){/*
-<script>
-$("*").css("border", "3px solid red");
-</script>
+&lt;script&gt;
+$(&quot;*&quot;).css(&quot;border&quot;, &quot;3px solid red&quot;);
+&lt;/script&gt;
 */}).toString().uHereDoc();
 console.log(t);
 

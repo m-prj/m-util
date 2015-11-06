@@ -1,7 +1,7 @@
 
-<script>
-$("*").css("border", "3px solid red");
-</script>
+&lt;script&gt;
+$(&quot;*&quot;).css(&quot;border&quot;, &quot;3px solid red&quot;);
+&lt;/script&gt;
 
 [ 'test.png', 'png', 'test' ]
 test.png

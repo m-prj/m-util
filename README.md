@@ -55,9 +55,9 @@ $ npm i -S m-util
 require('./m-util.js');
 // Here Documents
 var t = (function(){/*
-<script>
-$("*").css("border", "3px solid red");
-</script>
+&lt;script&gt;
+$(&quot;*&quot;).css(&quot;border&quot;, &quot;3px solid red&quot;);
+&lt;/script&gt;
 */}).toString().uHereDoc();
 console.log(t);
 
@@ -91,9 +91,9 @@ console.log(Math.uRound(232.455, 2));
   <pre class="rich-diff-level-zero">
 # node example.js
 
-<script>
-$("*").css("border", "3px solid red");
-</script>
+&lt;script&gt;
+$(&quot;*&quot;).css(&quot;border&quot;, &quot;3px solid red&quot;);
+&lt;/script&gt;
 
 [ 'test.png', 'png', 'test' ]
 test.png
