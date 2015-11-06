@@ -19,23 +19,31 @@ echo file_get_contents('README-func.txt');
 ```
 
 ### NodeJS
-```js
+<table>
+<tr>
+  <th><h3>Code</h3></th>
+  <th><h3>Result</h3></th>
+</tr>
+<tr>
+  <td>
+  <pre class="rich-diff-level-zero">
 require('./NPM_PACKAGE_NAME.js');
-
 <?php
 echo implode("\n", array_slice(explode( "\n", file_get_contents('example.js')), 2));
 ?>
-```
-
-### examples
-```
+  </pre>
+  </td>
+  <td>
+  <pre class="rich-diff-level-zero">
 # node example.js
 <?php
 `node example.js > README-result.txt`;
 echo file_get_contents('README-result.txt');
 ?>
-```
-
+  </pre>
+  </td>
+</tr>
+</table>
 
 ## ライセンス - License
 MIT License

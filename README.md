@@ -12,16 +12,16 @@ $ npm i -S m-util
 
 ### Functions
 ```
-
+  // ヒアドキュメント用
   String.prototype.uHereDoc = function() {…}
 --
-  };
+  // スラッシュ挿入
   String.prototype.uAddslashes = function(s) {…}
 --
-  }
+    // 文字列の繰り返し
   String.prototype.uRepeat = function(i) {…}
 --
-   */
+  // パスからファイル情報返す @return ['ファイル名','拡張子','拡張子抜きファイル名']
   String.prototype.uGetFileInfo = function() {…}
 --
     // パスからファイル名を返す
@@ -33,20 +33,26 @@ $ npm i -S m-util
     // パスから拡張子抜きファイル名を返す
   String.prototype.uGetFileName = function() {…}
 --
-  // Math.floor(x)小数点以下指定
+    // Math.floor(x)小数点以下指定
   Math.uFloor = function(x, scale) {…}
 --
-  // Math.ceil(x)小数点以下指定
+    // Math.ceil(x)小数点以下指定
   Math.uCeil = function(x, scale) {…}
 --
-  // Math.round(x)小数点以下指定
+    // Math.round(x)小数点以下指定
   Math.uRound = function(x, scale) {…}
 ```
 
 ### NodeJS
-```js
+<table>
+<tr>
+  <th><h3>Code</h3></th>
+  <th><h3>Result</h3></th>
+</tr>
+<tr>
+  <td>
+  <pre class="rich-diff-level-zero">
 require('./m-util.js');
-
 // Here Documents
 var t = (function(){/*
 <script>
@@ -79,10 +85,10 @@ console.log(Math.uFloor(232.456, 2));
 console.log(Math.uCeil(232.456, 2));
 console.log(Math.uRound(232.454, 2));
 console.log(Math.uRound(232.455, 2));
-```
-
-### examples
-```
+  </pre>
+  </td>
+  <td>
+  <pre class="rich-diff-level-zero">
 # node example.js
 
 <script>
@@ -107,8 +113,10 @@ index
 232.46
 232.45
 232.46
-```
-
+  </pre>
+  </td>
+</tr>
+</table>
 
 ## ライセンス - License
 MIT License

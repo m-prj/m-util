@@ -1,13 +1,15 @@
 module.exports = new(function() {
 
-
+  // ヒアドキュメント用
   String.prototype.uHereDoc = function() {
     return this.replace(/^function\s?\(\)\s?\{\/\*/gi, "").replace(/\*\/;?\}$/gi, "");
   };
+  // スラッシュ挿入
   String.prototype.uAddslashes = function(s) {
-    var reg = new RegExp(s, 'g');
-    return this.replace(reg, "\\" + s);
-  }
+      var reg = new RegExp(s, 'g');
+      return this.replace(reg, "\\" + s);
+    }
+    // 文字列の繰り返し
   String.prototype.uRepeat = function(i) {
     var repeatStr = this;
     var str = "";
@@ -18,10 +20,7 @@ module.exports = new(function() {
     return str;
   }
 
-  /**
-   * パスからファイル情報返す
-   * @return ['ファイル名','拡張子','拡張子抜きファイル名']
-   */
+  // パスからファイル情報返す @return ['ファイル名','拡張子','拡張子抜きファイル名']
   String.prototype.uGetFileInfo = function() {
       var file_path = this;
       // Extract a file name with the extension.
@@ -45,28 +44,28 @@ module.exports = new(function() {
     }
     // パスから拡張子抜きファイル名を返す
   String.prototype.uGetFileName = function() {
-    file_path = this;
-    return file_path.uGetFileInfo()[2];
-  }
-  // Math.floor(x)小数点以下指定
+      file_path = this;
+      return file_path.uGetFileInfo()[2];
+    }
+    // Math.floor(x)小数点以下指定
   Math.uFloor = function(x, scale) {
-    if(typeof scale !== "undefined" && scale !== null){
-      var s = Math.pow(10, scale)
-      return Math.floor(x * s) / s;
+      if (typeof scale !== "undefined" && scale !== null) {
+        var s = Math.pow(10, scale)
+        return Math.floor(x * s) / s;
+      }
+      return Math.floor(x);
     }
-    return Math.floor(x);
-  }
-  // Math.ceil(x)小数点以下指定
+    // Math.ceil(x)小数点以下指定
   Math.uCeil = function(x, scale) {
-    if(typeof scale !== "undefined" && scale !== null){
-      var s = Math.pow(10, scale);
-      return Math.ceil(x * s) / s;
+      if (typeof scale !== "undefined" && scale !== null) {
+        var s = Math.pow(10, scale);
+        return Math.ceil(x * s) / s;
+      }
+      return Math.ceil(x);
     }
-    return Math.ceil(x);
-  }
-  // Math.round(x)小数点以下指定
+    // Math.round(x)小数点以下指定
   Math.uRound = function(x, scale) {
-    if(typeof scale !== "undefined" && scale !== null){
+    if (typeof scale !== "undefined" && scale !== null) {
       var s = Math.pow(10, scale);
       return Math.round(x * s) / s;
     }
