@@ -26,12 +26,14 @@ echo file_get_contents('README-func.txt');
 </tr>
 <tr>
   <td>
-  <pre class="rich-diff-level-zero">
+  <div class="highlight highlight-source-js">
+    <pre class="rich-diff-level-zero">
 require('./NPM_PACKAGE_NAME.js');
 <?php
 echo implode("\n", array_slice(explode( "\n", file_get_contents('example.js')), 2));
 ?>
-  </pre>
+    </pre>
+  </div>
   </td>
   <td>
   <pre class="rich-diff-level-zero">

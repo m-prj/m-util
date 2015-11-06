@@ -51,7 +51,8 @@ $ npm i -S m-util
 </tr>
 <tr>
   <td>
-  <pre class="rich-diff-level-zero">
+  <div class="highlight highlight-source-js">
+    <pre class="rich-diff-level-zero">
 require('./m-util.js');
 // Here Documents
 var t = (function(){/*
@@ -85,7 +86,8 @@ console.log(Math.uFloor(232.456, 2));
 console.log(Math.uCeil(232.456, 2));
 console.log(Math.uRound(232.454, 2));
 console.log(Math.uRound(232.455, 2));
-  </pre>
+    </pre>
+  </div>
   </td>
   <td>
   <pre class="rich-diff-level-zero">
