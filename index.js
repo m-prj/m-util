@@ -65,10 +65,40 @@ module.exports = new(function() {
     }
     // Math.round(x)小数点以下指定
   Math.uRound = function(x, scale) {
-    if (typeof scale !== "undefined" && scale !== null) {
-      var s = Math.pow(10, scale);
-      return Math.round(x * s) / s;
+      if (typeof scale !== "undefined" && scale !== null) {
+        var s = Math.pow(10, scale);
+        return Math.round(x * s) / s;
+      }
+      return Math.round(x);
     }
-    return Math.round(x);
-  }
+    // 空白詰め（左寄せ）
+  mLpad = function(txt, pad) {
+    var c, i, t;
+    if (pad == null) {
+      pad = 40;
+    }
+    c = " ";
+    i = 0;
+    t = txt;
+    while (i <= pad - txt.length) {
+      t = c + t;
+      i++;
+    }
+    return t;
+  };
+  // 空白詰め（右寄せ）
+  mRpad = function(txt, pad) {
+    var c, i, t;
+    if (pad == null) {
+      pad = 40;
+    }
+    c = " ";
+    i = 0;
+    t = txt;
+    while (i <= pad - txt.length) {
+      t += c;
+      i++;
+    }
+    return t;
+  };
 })();

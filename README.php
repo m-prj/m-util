@@ -13,7 +13,7 @@ $ npm i -S NPM_PACKAGE_NAME
 ### Functions
 ```
 <?php
-`fgrep -B 1 "= function" index.js | gsed -e "s/{/{…}/g" > README-func.txt`;
+`fgrep -B 1 "= function" index.js | sed -e "s/{/{…}/g" > README-func.txt`;
 echo file_get_contents('README-func.txt');
 ?>
 ```
@@ -53,3 +53,8 @@ MIT License
 
 ## 作者 - Author
 - (C)Misaki Shibata <misaki.pink@gmail.com>
+
+<?php
+unlink('README-result.txt');
+unlink('README-func.txt');
+?>
