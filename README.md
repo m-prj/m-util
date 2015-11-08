@@ -42,11 +42,11 @@ $ npm i -S m-util
     // Math.round(x)小数点以下指定
   Math.uRound = function(x, scale) {…}
 --
-    // 空白詰め（左寄せ）
-  mLpad = function(txt, pad) {…}
+    // 左空白詰め（右寄せ）
+  uLpad = function(txt, pad) {…}
 --
-  // 空白詰め（右寄せ）
-  mRpad = function(txt, pad) {…}
+  // 右空白詰め（左寄せ）
+  uRpad = function(txt, pad) {…}
 ```
 
 ### NodeJS
@@ -101,12 +101,12 @@ console.log(Math.uRound(232.454, 2));
 console.log(Math.uRound(232.455, 2));
 console.log(hr);
 
-console.log('[' +mRpad("hoge") + ']');
-console.log('[' +mLpad("hoge") + ']');
+console.log('[' +uRpad("hoge") + ']');
+console.log('[' +uLpad("hoge") + ']');
 console.log(hr);
 
-console.log('[' +mRpad("fuga", 10) + ']');
-console.log('[' +mLpad("fuga", 10) + ']');
+console.log('[' +uRpad("fuga", 10) + ']');
+console.log('[' +uLpad("fuga", 10) + ']');
 console.log(hr);
     </pre>
   </div>

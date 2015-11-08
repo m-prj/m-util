@@ -71,8 +71,8 @@ module.exports = new(function() {
       }
       return Math.round(x);
     }
-    // 空白詰め（左寄せ）
-  mLpad = function(txt, pad) {
+    // 左空白詰め（右寄せ）
+  uLpad = function(txt, pad) {
     var c, i, t;
     if (pad == null) {
       pad = 40;
@@ -86,8 +86,8 @@ module.exports = new(function() {
     }
     return t;
   };
-  // 空白詰め（右寄せ）
-  mRpad = function(txt, pad) {
+  // 右空白詰め（左寄せ）
+  uRpad = function(txt, pad) {
     var c, i, t;
     if (pad == null) {
       pad = 40;
