@@ -1,6 +1,6 @@
 {
   "name": "m-util",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Utility.",
   "main": "index.js",
   "engines": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/misak1/m-util.git"
+    "url": "https://github.com/m-prj/m-util.git"
   },
   "scripts": {
     "examples": "node ./examples.js",
@@ -23,7 +23,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/misak1/m-util/issues"
+    "url": "https://github.com/m-prj/m-util/issues"
   },
   "dependencies": {},
   "devDependencies": {
