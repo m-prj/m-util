@@ -1,6 +1,6 @@
 {
   "name": "m-util",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Utility.",
   "main": "index.js",
   "engines": {

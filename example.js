@@ -3,13 +3,11 @@ require('./index.js');
 var hr = "_".uRepeat(20);
 
 // Here Documents
-var t = (function() {
-  /*
+var t = (function() {/*
   &lt;script&gt;
   $(&quot;*&quot;).css(&quot;border&quot;, &quot;3px solid red&quot;);
   &lt;/script&gt;
-  */
-}).toString().uHereDoc();
+  */}).toString().uHereDoc();
 console.log(t);
 console.log(hr);
 

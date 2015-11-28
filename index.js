@@ -2,7 +2,7 @@ module.exports = new(function() {
 
   // ヒアドキュメント用
   String.prototype.uHereDoc = function() {
-    return this.replace(/^function\s?\(\)\s?\{\/\*/gi, "").replace(/\*\/;?\}$/gi, "");
+    return this.replace(/^function\s?\(\)\s?\{\/\*\!?/gi, "").replace(/\*\/;?\}$/gi, "");
   };
   // スラッシュ挿入
   String.prototype.uAddslashes = function(s) {
