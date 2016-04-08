@@ -12,41 +12,41 @@ $ npm i -S m-util
 
 ### Functions
 ```
-  // ヒアドキュメント用
-  String.prototype.uHereDoc = function() {…}
+    // ヒアドキュメント用
+    String.prototype.uHereDoc = function() {…}
 --
-  // スラッシュ挿入
-  String.prototype.uAddslashes = function(s) {…}
+    // スラッシュ挿入
+    String.prototype.uAddslashes = function(s) {…}
 --
     // 文字列の繰り返し
-  String.prototype.uRepeat = function(i) {…}
+    String.prototype.uRepeat = function(i) {…}
 --
-  // パスからファイル情報返す @return ['ファイル名','拡張子','拡張子抜きファイル名']
-  String.prototype.uGetFileInfo = function() {…}
+    // パスからファイル情報返す @return ['ファイル名','拡張子','拡張子抜きファイル名']
+    String.prototype.uGetFileInfo = function() {…}
 --
     // パスからファイル名を返す
-  String.prototype.uGetFileNameExt = function() {…}
+    String.prototype.uGetFileNameExt = function() {…}
 --
     // パスから拡張子を返す
-  String.prototype.uGetFileExt = function() {…}
+    String.prototype.uGetFileExt = function() {…}
 --
     // パスから拡張子抜きファイル名を返す
-  String.prototype.uGetFileName = function() {…}
+    String.prototype.uGetFileName = function() {…}
 --
     // Math.floor(x)小数点以下指定
-  Math.uFloor = function(x, scale) {…}
+    Math.uFloor = function(x, scale) {…}
 --
     // Math.ceil(x)小数点以下指定
-  Math.uCeil = function(x, scale) {…}
+    Math.uCeil = function(x, scale) {…}
 --
     // Math.round(x)小数点以下指定
-  Math.uRound = function(x, scale) {…}
+    Math.uRound = function(x, scale) {…}
 --
     // 左空白詰め（右寄せ）
-  uLpad = function(txt, pad) {…}
+    uLpad = function(txt, pad) {…}
 --
-  // 右空白詰め（左寄せ）
-  uRpad = function(txt, pad) {…}
+    // 右空白詰め（左寄せ）
+    uRpad = function(txt, pad) {…}
 ```
 
 ### NodeJS
@@ -106,6 +106,9 @@ console.log(hr);
 console.log('[' +uRpad("fuga", 10) + ']');
 console.log('[' +uLpad("fuga", 10) + ']');
 console.log(hr);
+
+console.log('[' +escapeHtml('<>`"') + ']');
+console.log(hr);
     </pre>
   </div>
   </td>
@@ -145,6 +148,8 @@ ____________________
 ____________________
 [fuga       ]
 [       fuga]
+____________________
+[&lt;&gt;&#x60;&quot;]
 ____________________
   </pre>
   </td>

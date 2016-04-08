@@ -46,3 +46,6 @@ console.log(hr);
 console.log('[' +uRpad("fuga", 10) + ']');
 console.log('[' +uLpad("fuga", 10) + ']');
 console.log(hr);
+
+console.log('[' +escapeHtml('<>`"') + ']');
+console.log(hr);
